@@ -1,0 +1,117 @@
+﻿<!--Emma Engstrom, IS 413, Mission 4-->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Link to bootstrap stylesheet and JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="utf-8" />
+
+    <!-- Link to local stylesheet -->
+    <link href="css/default.css" rel="stylesheet" />
+
+    <!-- Page title -->
+    <title>IS 413 First Website</title>
+
+    <!-- Icon for the website -->
+    <link rel="icon" type="image/x-icon" href="img/emoji-smile-upside-down.svg">
+
+</head>
+
+<body>
+    <!--navbar that doesn't actually navigate but looks somewhat decent '-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <div class="logo-image">
+                        <img src="img/byu_logo_no_bg.png.png" class="img-fluid" style="height:30px;width: auto; margin-top: 0;" />
+                    </div>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--main content-->
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <!--side column 1 (couldn't figure out how to extend it all the way)-->
+            <div class="col-sm-2 sidenav">
+            </div>
+
+            <!--center column-->
+            <div class="col-sm-8 text-left">
+                <div class="row">
+                    <!--title and goals for class-->
+                    <div class="text-md-center col-sm-6">
+                        <h1>Emma Engstrom</h1>
+                        <br />
+                        <div class="m-2">
+                            <h4> What I'm hoping to get from this class</h4>
+                            <p>I have been so excited for this class because I work in Golang, a strictly typed language. So far in the core and in my programming life, I've only learned loosely typed languages which makes work really confusing. So I'm hoping the experience I get in C# will indirectly help me in Go. </p>
+                        </div>
+                        <!--career choices-->
+                        <div class="m-2">
+                            <h4>Top three career choices: </h4>
+                            <ol>
+                                <li>Product Manager</li>
+                                <li>Project Manager</li>
+                                <li>Software Team Leader</li>
+                            </ol>
+                        </div>
+                        <!--grade calculator form--> 
+                        <div>
+                            <h3>Grade Calculator</h3>
+                            <h6>Enter your grade as a percent for each category</h6>
+                            <form>
+                                <label>Assignments: </label>
+                                <input id="assignments" /> <br />
+                                <label>Group Project: </label>
+                                <input id="groupProject" /> <br />
+                                <label>Quizzes: </label>
+                                <input id="quizzes" /> <br />
+                                <label>Midterm Exam: </label>
+                                <input id="midtermExam" /> <br />
+                                <label>Final Exam: </label>
+                                <input id="finalExam" /> <br />
+                                <label>Intex: </label>
+                                <input id="intex" /> <br />
+                                <input type="button" id="btnSend" value="Calculate Grades" />
+                                <!--element that displays results-->
+                                <h4 id="results"></h4>
+                            </form>
+                        </div>
+                    </div>
+                    <!--image-->
+                    <div class="col-sm-6 mt-1">
+                        <br /> <br /><br /><br />
+                        <figure class="figure">
+                            <img src="img/something_fun.jpg" style="width:100%" />
+                            <figcaption class="figure-caption">A recent costume party -- time with friends is always fun!</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <!--second side column--> 
+            <div class="col-sm-2 sidenav">
+            </div>
+        </div>
+    </div>
+
+    <!--bring in jquery and javascript--> 
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="js/grade_calc.js"></script>
+
+</body>
+</html>
