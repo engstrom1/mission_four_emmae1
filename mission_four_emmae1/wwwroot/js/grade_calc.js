@@ -12,8 +12,9 @@ $("#btnSend").click(function () {
     // calculate letter grade
     letterGrade = determineGrade(percentageGrade);
     // print to output
-    string = "Your total percentage is " + Math.round(percentageGrade) + "% and your letter grade is a(n) "  + letterGrade;
-    $("#results").text(string);
+    string = "Your total percentage is " + Math.round(percentageGrade) + "% and your letter grade is a(n) " + letterGrade;
+    alert(string)
+    //$("#results").text(string);
 })
 
 
